@@ -7,6 +7,12 @@
   pointer-events: none;
 }
 
+.header {
+  background: url(./img/compraventa-muebles-segunda-mano1.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
