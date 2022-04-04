@@ -1,11 +1,6 @@
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import CartWidget from "./CartWidget";
-
-
-
-
-
+import ItemListContainer from "./ItemListContainer";
 
 
 const Navbar = () => {
@@ -13,6 +8,7 @@ const Navbar = () => {
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
+          <img src="./img/2damano.png" alt="Logo" class="logo" />
           <a class="navbar-brand" href="#">2daMano</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,15 +37,19 @@ const Navbar = () => {
                 <a class="nav-link" href="#">Contacto</a>
               </li>
             </ul>
+            <CartWidget />
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
-            <CartWidget />
           </div>
         </div>
+        <main>
+          <ItemListContainer />
+        </main>
       </nav>
     </header>
+
   );
 }
 

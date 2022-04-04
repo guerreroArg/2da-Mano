@@ -1,5 +1,10 @@
 import './App.css';
+import  'bootstrap/dist/css/bootstrap.min.css';
 import  NavBar  from "./components/NavBar.js";
+import ItemListContainer from "./components/ItemListContainer.js";
+import ItemCount from "./components/ItemCount";
+
+
 
 
 function App() {
@@ -7,10 +12,10 @@ function App() {
     <div className="App">
       <NavBar/>
       <header className="App-header">
-        
-        <p>
-         Edit <code>src/App.js</code> and save to reload.
-        </p>
+      
+      <ItemListContainer/>
+      <ItemCount/>
+                  
         <a
           className="App-link"
           href="https://reactjs.org"

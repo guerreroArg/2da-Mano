@@ -7,11 +7,18 @@
   pointer-events: none;
 }
 
-.header {
+.logo {
+  width: 3rem;
+  height: 3rem;
+  padding: 7px;
+}
+
+/*.header {
   background: url(./img/compraventa-muebles-segunda-mano1.jpg) no-repeat center;
   background-size: cover;
   min-height: 100vh;
 }
+*/
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
